@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../src/fonts/Roboto-Regular.ttf");
+}
+
+.container{
+    max-width: 1320px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+*{
+    user-select: none;
+    font-family: "Roboto", sans-serif;
+}
+button{
+    cursor: pointer;
+}
+
+.animation-top{
+    transform: translateY(-60px);
+    opacity: 0;
+    animation: FromTop .5s ease-out .2s forwards;
+}
+.animation-top1{
+    transform: translateY(-60px);
+    opacity: 0;
+    animation: FromTop .5s ease-out .2s forwards;
+}
+.animation-top2{
+    transform: translateY(-60px);
+    opacity: 0;
+    animation: FromTop .5s ease-out .2s forwards;
+}
+.animation-top3{
+    transform: translateY(-60px);
+    opacity: 0;
+    animation: FromTop .5s ease-out .2s forwards;
+}
+.animation-right{
+    transform: translateX(60px);
+    opacity: 0;
+    animation: FromRight .5s ease-out .3s forwards;
+}
+.animation-left{
+    transform: translateX(-60px);
+    opacity: 0;
+    animation: FromLeft .5s ease-out .5s forwards;
+}
+.animation-top1{
+    animation-delay: .4s;
+}
+.animation-top2{
+    animation-delay: .6s;
+}
+.animation-top3{
+    animation-delay: .8s;
+}
+.animation-top4{
+    animation-delay: 1s;
+}
+.animation-bottom{
+    transform: translateY(60px);
+    opacity: 0;
+    animation: FromBottom .8s ease-out .3s forwards;
+}
+.animation-bottom1{
+    transform: translateY(60px);
+    opacity: 0;
+    animation: FromBottom .8s ease-out .3s forwards;
+}
+@keyframes FromLeft {
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes FromRight {
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes FromTop {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes FromBottom {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
